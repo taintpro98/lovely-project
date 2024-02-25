@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+#loveQuestion {
+  position: absolute;
+  left: 220px;
+  top: 230px;
+  font-size: 80px;
+}
+
+input {
+  width: 200px;
+  font-size: 30px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+#btnYes {
+  position: absolute;
+  left: 150px;
+  top: 450px;
+  background-color: #7bd806;
+  cursor: pointer;
+}
+
+#btnNo {
+  position: absolute;
+  left: 300px;
+  top: 450px;
+  background-color: #f4511e;
+  transition: 0.3s;
+}
+
+body {
+  background: #6b92b9;
+}
+canvas {
+  display: block;
+}
+
+.avatar-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.avatar-image {
+  width: 400px; /* Đặt chiều rộng của ảnh */
+  height: 400px; /* Đặt chiều cao của ảnh */
+  border-radius: 50%; /* Đặt góc bo tròn để tạo hiệu ứng avatar */
+}
+
+canvas {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1; /* Đặt z-index thấp hơn so với avatar-container để Canvas hiển thị phía sau */
+}

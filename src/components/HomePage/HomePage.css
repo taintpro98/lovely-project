@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.HomePage {
+  background: url(https://www.pixel4k.com/wp-content/uploads/2020/01/moon-tree-starry-sky-night-stars-dark_1579107209.jpg.webp)
+    no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  backdrop-filter: blur(100px);
+
+  /* Tùy chỉnh màu sắc và độ trong suốt của nền */
+  background-color: rgba(255, 255, 255, 0.9); /* Màu sắc và độ trong suốt */
+}
+
+body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  -webkit-background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+audio,
+.love_you {
+  position: absolute;
+  left: 60%;
+  top: 1.5rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1809185784;
+}
+
+.love_you {
+  top: 10%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffc0cb;
+  letter-spacing: 0.05rem;
+  -moz-animation: love-xf 1.2s alternate ease-in-out;
+  -webkit-animation: love-xf 1.2s alternate ease-in-out;
+  animation: love-xf 1.2s alternate ease-in-out;
+  user-select: none;
+  -webkit-text-shadow: 0 0 8px #fff;
+  text-shadow: 0 0 8px #fff;
+}
+
+#loveQuestion {
+  /* top: 50%; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffc0cb;
+  letter-spacing: 0.05rem;
+  -moz-animation: love-xf 1.2s alternate ease-in-out;
+  -webkit-animation: love-xf 1.2s alternate ease-in-out;
+  animation: love-xf 1.2s alternate ease-in-out;
+  user-select: none;
+  -webkit-text-shadow: 0 0 8px #fff;
+  text-shadow: 0 0 8px #fff;
+}
+
+#lovexf {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 520;
+}
+
+.love_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#btnNo {
+  position: absolute;
+  left: 860px;
+  top: 450px;
+  background-color: #f4511e;
+  transition: 0.3s;
+}
+
+.love_container {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  padding-right: 20px; /* hoặc giá trị padding phù hợp với bạn */
+}
+
+.question-container {
+  margin-bottom: 20px; /* hoặc giá trị margin phù hợp với bạn */
+}
+
+/* #loveQuestion, */
+#btnYes,
+#btnNo {
+  margin: 10px; /* hoặc giá trị margin phù hợp với bạn */
+}
+
+@keyframes love-xf {
+  0% {
+    opacity: 0.08;
+    filter: blur(8px);
+    letter-spacing: 0.1rem;
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    letter-spacing: 0.05rem;
+  }
+}
